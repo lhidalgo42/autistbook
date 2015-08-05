@@ -11,16 +11,25 @@
 |
 */
 
+/*
+ *
+ * Routes for login
+ *
+ */
 
 Route::get('/login', ['as' => 'login', 'uses' => 'SessionsController@create']);
 Route::get('/logout', ['as' => 'logout', 'uses' => 'SessionsController@destroy']);
 Route::resource('sessions', 'SessionsController', ['only' => ['create', 'store', 'destroy']]);
-Route::get('/{time}/{id}/{data}','DataController@create');
+
+
+Route::any('/{code}/{id}/{value}','DataController@create');
 Route::get('/test/{id}','DataController@show');
 
-Route::get('/', function()
-{
-	return time();
+
+Route::group(array('before' => 'auth'), function() {
+
+    Route::get('/',['as' => 'home','uses' => 'UsersController@index']);
+
 
 });
 
