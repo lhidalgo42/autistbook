@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Home</title>
+
 
     <link rel="icon" type="image/ico" href="/img/favicon.ico" />
 
@@ -41,7 +39,7 @@
             <br><br>
             <a class="btn btn-lg btn-otro" id="registrarse">CONECTAR DISPOSITIVO</a>
             <br><br>
-            <a class="btn btn-lg btn-otro" id="registrarse">AÑADIR USUARIO</a>
+            <a class="btn btn-lg btn-otro" id="registrarse">A&Ntilde;ADIR USUARIO</a>
         </div>
     </div>
 </div>
