@@ -7,11 +7,9 @@
 
     <link rel="icon" type="image/ico" href="/images/favicon.ico" />
 
-    <link href="/packages/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/packages/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    {{HTML::style('packages/bootstrap/dist/css/bootstrap.min.css') }}
+    {{HTML::style("packages/font-awesome/css/font-awesome.min.css") }}
     <link rel="stylesheet" type="text/css" href="css/login.css" />
-    <style>
-    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,14 +20,55 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="/packages/jquery/dist/jquery.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.0/js/toastr.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/packages/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
 
+
+
 </head>
 <body>
-<div class="container">
+<img src="/img/bg.png" id="bg" alt="">
+<div class="container fadeout-2" id="home">
+    <div class="row" style="  ">
+        <div class="col-sm-6 col-md-4 col-md-offset-4 center" style="">
+            <img  src="/img/logo.png" style="width: 60%;height: 60%;margin-left: 20%;margin-top: 40%"/>
+            
+        </div>
+    </div>
+</div>
+<div class="container fadein-2" id="options" style="display: none;   ">
+    <div class="row">
+            <div class="col-lg-6 col-lg-offset-3" style="text-align: center;padding-bottom: 50px;">
+                <img  src="/img/logo.png" style="width: 60%;height: 60%;margin-top: 40%"/>
+                <button class="btn btn-lg btn-iniciar-sesion" id="iniciar-sesion">INICIAR SESIÓN</button>
+                <br><br>
+                <button class="btn btn-lg btn-registrarse" id="registrarse">REGISTRARSE</button>
+            </div>
+    </div>
+</div>
+<div class="container" id="options-2" style="display: none;   ">
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3" style="text-align: center;padding-bottom: 50px;">
+            <img  src="/img/logo.png" style="width: 60%;height: 60%;margin-top: 40%"/>
+                {{ Form::open(['route'=> 'sessions.store']) }}
+                {{ Form::email('email', Input::old('email'), array('placeholder' => 'Correo','class' => 'form-control input-lg','id' => 'mail','required')) }}
+                <br><br>
+                {{ Form::password('password',array('placeholder' => 'Contraseña','class' => 'form-control input-lg', 'id' => 'pass' ,'required')) }}
+                <br>
+                @if(Session::has('error'))
+                    <h4 class="text-info">{{Session::get('error')}}</h4>
+                @endif
+                <br>
+
+                <div >
+                    <span class="pull-left">{{ Form::checkbox('remember', true,array('class' => 'form-control input-lg')) }} <span style="color: #FFFFFF;font-size: 18px;">Recordarme</span> </span> <button class="btn btn-lg btn-registrarse pull-right" type="submit">Iniciar</button>
+                </div>
+                {{ Form::close() }}
+        </div>
+    </div>
+</div>
+<div class="container" id="content" style="display: none;">
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
             <div class="account-wall">
@@ -41,15 +80,37 @@
                         {{ Form::checkbox('remember', true,array('class' => 'form-control')) }} Recordarme
                     </div>
                     <button class="btn btn-lg btn-primary btn-block" type="submit" id="login">Sign in</button>
-                @if(Session::has('error'))
-                    <span class="text-danger">{{Session::get('error')}}</span>
-                @endif
+
                     <a href="#" class="pull-right need-help">Olvide mi Clave ? </a><span class="clearfix"></span>
-                {{ Form::close() }}
+
             </div>
             <a href="#" class="text-center new-account">Create an account </a>
         </div>
     </div>
 </div>
+<script>
+    var timer = setTimeout(function(){
+        $("#home").css('display','none');
+        $("#options").css('display','block');
+    },2000);
+    $("#iniciar-sesion").click(function(){
+        $("#home").removeClass('fadeout-2');
+        $("#options").removeClass('fadein-2').addClass('fadeout-1');
+        $("#options-2").addClass('fadein-1');
+        var timer = setTimeout(function(){
+            $("#options").css('display','none');
+            $("#options-2").css('display','block');
+        },1000);
+
+    });
+</script>
+@if(Session::has('error'))
+    <script>
+        $("#home").css('display','none').removeClass('fadeout-2');
+        $("#options").css('display','none').removeClass('fadein-2');
+        $("#options-2").css('display','block').addClass('fadein-1');
+        clearTimeout(timer);
+    </script>
+@endif
 </body>
 </html>
