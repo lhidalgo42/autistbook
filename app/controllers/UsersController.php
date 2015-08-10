@@ -8,9 +8,20 @@ class UsersController extends \BaseController {
 	 *
 	 * @return Response
 	 */
+	public function home()
+	{
+		return View::make('home.index');
+	}
+
+	/**
+	 * Display a listing of the resource.
+	 * GET /users
+	 *
+	 * @return Response
+	 */
 	public function index()
 	{
-		//
+		return View::make('home.home');
 	}
 
 	/**

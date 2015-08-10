@@ -28,7 +28,8 @@ Route::get('/test/{id}','DataController@show');
 
 Route::group(array('before' => 'auth'), function() {
 
-    Route::get('/',['as' => 'home','uses' => 'UsersController@index']);
+    Route::get('/',['as' => 'menu','uses' => 'UsersController@home']);
+    Route::get('/home',['as' => 'home','uses' => 'UsersController@index']);
 
 
 });

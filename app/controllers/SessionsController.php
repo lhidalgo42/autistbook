@@ -35,7 +35,7 @@ class SessionsController extends \BaseController {
 		{
 			return Redirect::back()->withInput()->with('error', 'Su nombre de Usuario o Su clave son Incorrectos.');
 		}
-		return Redirect::route('home')->with('Success', 'Bienvenido $name$ $lastname$ Nuevamente.');
+		return Redirect::route('menu')->with('Success', 'Bienvenido $name$ $lastname$ Nuevamente.');
 	}
 	public function destroy()
 	{
