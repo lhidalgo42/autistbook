@@ -12,6 +12,11 @@
     {{HTML::style('packages/bootstrap/dist/css/bootstrap.min.css') }}
     {{HTML::style("packages/font-awesome/css/font-awesome.min.css") }}
     {{HTML::style("/css/login.css") }}
+            <style>
+                #buttons > a{
+                    width: 300px;
+                }
+            </style>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,8 +39,8 @@
 <div class="row">
     <div class="col-lg-6 col-lg-offset-3" style="text-align: center;padding-bottom: 50px;">
         <img  src="/img/logo.png" style="width: 60%;height: 60%;margin-top: 40%"/>
-        <div>
-            <a href="/home" class="btn btn-lg btn-entrar" id="iniciar-sesion">ENTRAR</a>
+        <div id="buttons">
+            <a href="/home" class="btn btn-lg btn-entrar">ENTRAR</a>
             <br><br>
             <a class="btn btn-lg btn-otro" id="registrarse">CONECTAR DISPOSITIVO</a>
             <br><br>
