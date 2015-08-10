@@ -32,8 +32,8 @@ Route::group(array('before' => 'auth'), function() {
     Route::get('/home',['as' => 'home','uses' => 'UsersController@index']);
     Route::get('/alerts',['as' => 'alerts','uses' => 'AlertsController@index']);
     Route::get('/charts/day',['as' => 'charts','uses' => 'ChartsController@day']);
-    Route::get('/charts/week',['as' => '','uses' => 'ChartsController@month']);
-    Route::get('/charts/month',['as' => 'alerts','uses' => 'ChartsController@year']);
+    Route::get('/charts/week',['as' => '','uses' => 'ChartsController@week']);
+    Route::get('/charts/month',['as' => 'alerts','uses' => 'ChartsController@month']);
 
 
 });

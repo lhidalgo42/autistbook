@@ -8,79 +8,31 @@ class ChartsController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function day()
 	{
-		//
+		return View::make('charts.day');
 	}
-
 	/**
-	 * Show the form for creating a new resource.
-	 * GET /charts/create
+	 * Display a listing of the resource.
+	 * GET /charts
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function week()
 	{
-		//
+		return View::make('charts.day');
 	}
-
 	/**
-	 * Store a newly created resource in storage.
-	 * POST /charts
+	 * Display a listing of the resource.
+	 * GET /charts
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function month()
 	{
-		//
+		return View::make('charts.day');
 	}
 
-	/**
-	 * Display the specified resource.
-	 * GET /charts/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
-	}
 
-	/**
-	 * Show the form for editing the specified resource.
-	 * GET /charts/{id}/edit
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
-
-	/**
-	 * Update the specified resource in storage.
-	 * PUT /charts/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
-
-	/**
-	 * Remove the specified resource from storage.
-	 * DELETE /charts/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
-	}
 
 }
