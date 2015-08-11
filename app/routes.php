@@ -22,20 +22,21 @@ Route::get('/logout', ['as' => 'logout', 'uses' => 'SessionsController@destroy']
 Route::resource('sessions', 'SessionsController', ['only' => ['create', 'store', 'destroy']]);
 
 
-Route::any('/{code}/{id}/{value}','DataController@create');
-Route::get('/test/{id}','DataController@show');
+
 
 
 Route::group(array('before' => 'auth'), function() {
 
     Route::get('/',['as' => 'menu','uses' => 'UsersController@home']);
-    Route::get('/home',['as' => 'home','uses' => 'UsersController@index']);
-    Route::get('/alerts',['as' => 'alerts','uses' => 'AlertsController@index']);
-    Route::get('/charts/day',['as' => 'charts','uses' => 'ChartsController@day']);
-    Route::get('/charts/week',['as' => '','uses' => 'ChartsController@week']);
-    Route::get('/charts/month',['as' => 'alerts','uses' => 'ChartsController@month']);
+    Route::get('/home/{id}',['as' => 'home','uses' => 'UsersController@index']);
+    Route::get('/alerts/{id}',['as' => 'alerts','uses' => 'AlertsController@index']);
+    Route::get('/charts/{id}/day',['as' => 'charts','uses' => 'ChartsController@day']);
+    Route::get('/charts/{id}/week',['as' => '','uses' => 'ChartsController@week']);
+    Route::get('/charts/{id}/month',['as' => 'alerts','uses' => 'ChartsController@month']);
 
 
 });
+
+Route::any('/{code}/{id}/{value}','DataController@create');
 
 

@@ -6,12 +6,12 @@
         @include('navs.top2')
         @include('navs.charts')
         <div class="row" style="padding-top: 100px;padding-bottom: 100px;">
-            <div id="month"></div>
+            <div id="week"></div>
         </div>
         <script>
             $(function() {
                 Morris.Area({
-                    element: 'month',
+                    element: 'week',
                     data: {{ json_encode($data) }},
                     xkey: 'period',
                     ykeys: ['{{$patient->name}}'],

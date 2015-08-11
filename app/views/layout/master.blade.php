@@ -8,8 +8,10 @@
 
     <link rel="icon" type="image/ico" href="/img/favicon.ico" />
 
+
 {{HTML::style('packages/bootstrap/dist/css/bootstrap.min.css') }}
 {{HTML::style("packages/font-awesome/css/font-awesome.min.css") }}
+{{HTML::style("packages/morrisjs/morris.css") }}
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,9 +21,12 @@
     <![endif]-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/packages/jquery/dist/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/packages/bootstrap/dist/js/bootstrap.min.js"></script>
+    {{ HTML::script("/packages/jquery/dist/jquery.js") }}
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    {{ HTML::script("/packages/bootstrap/dist/js/bootstrap.min.js") }}
+    {{ HTML::script("/packages/raphael/raphael-min.js") }}
+    {{ HTML::script("/packages/morrisjs/morris.min.js") }}
+
 </head>
 <body>
 @yield('content')

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
+    <?php $user = Auth::user();
+    $patient = PatientUser::where('users_id',$user->id)->get()->first();
+
+    ?>
 
 
     <link rel="icon" type="image/ico" href="/img/favicon.ico" />
@@ -40,9 +44,13 @@
     <div class="col-lg-6 col-lg-offset-3" style="text-align: center;padding-bottom: 50px;">
         <img  src="/img/logo.png" style="width: 60%;height: 60%;margin-top: 40%"/>
         <div id="buttons">
-            <a href="/home" class="btn btn-lg btn-entrar">ENTRAR</a>
+            @if(count($patient) == 1)
+            <a href="/home/{{$patient->patients_id}}" class="btn btn-lg btn-entrar">ENTRAR</a>
+
+            @elseif(count($patient)==0)
             <br><br>
             <a class="btn btn-lg btn-otro" id="registrarse">CONECTAR DISPOSITIVO</a>
+            @endif
             <br><br>
             <a class="btn btn-lg btn-otro" id="registrarse">A&Ntilde;ADIR USUARIO</a>
         </div>

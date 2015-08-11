@@ -7,8 +7,8 @@ class SensorTableSeeder extends Seeder {
 	{
 		Sensor::create([
             'code' => 1438791775,
-            'name' => ''
-
+            'name' => 'Sensor Cardiaco',
+			'patients_id' => 1
 		]);
 
 	}

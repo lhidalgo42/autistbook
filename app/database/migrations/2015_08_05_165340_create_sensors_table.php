@@ -17,6 +17,7 @@ class CreateSensorsTable extends Migration {
 			$table->increments('id');
             $table->string('code');
             $table->string('name');
+			$table->integer('patients_id');
 			$table->timestamps();
 		});
 	}
