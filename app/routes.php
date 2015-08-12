@@ -35,9 +35,10 @@ Route::group(array('before' => 'auth'), function() {
     Route::get('/charts/{id}/month',['as' => 'alerts','uses' => 'ChartsController@month']);
     Route::get('/specialists/{id}','SpecialistsController@show');
     Route::get('/file/{id}','FileController@show');
-    route::get('/dictionary','');
-
+    route::get('/dictionary','DictionariesController@index');
+    route::get('/dictionary/{id}','DictionariesController@show');
 });
+Route::post('/dictionary/query','DictionariesController@search');
 
 Route::any('/{code}/{id}/{value}','DataController@create');
 
