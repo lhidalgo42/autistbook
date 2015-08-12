@@ -35,6 +35,9 @@
                 <tr style="height: 70px;">
                     <td><img src="/icon/agregarnuevo-01.png" style="margin-left:30px;height: 60px;width: 60px;"><td style="color: white;text-align: left" >Agregar Nuevo</td>
                 </tr>
+                    <tr style="height: 70px;">
+
+                    </tr>
             </table>
         </div>
         @include('navs.bottom')

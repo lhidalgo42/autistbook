@@ -12,6 +12,9 @@
 {{HTML::style('packages/bootstrap/dist/css/bootstrap.min.css') }}
 {{HTML::style("packages/font-awesome/css/font-awesome.min.css") }}
 {{HTML::style("packages/morrisjs/morris.css") }}
+        <style>
+            @yield('css','')
+        </style>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
