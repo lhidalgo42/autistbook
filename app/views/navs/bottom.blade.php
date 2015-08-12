@@ -5,19 +5,19 @@ $patient = PatientUser::where('users_id',$user->id)->get()->first();
     <div class="container" style="padding-top: 15px;">
         <a href="/home/{{$patient->patients_id}}" class="col-xs-4" style="text-align: center;">
             <div style="color: white">
-                <img src="/icon/inicio-01.png" style="width: 25%;height: 25%;"><br>
+                <img src="/icon/inicio-01.png" style="width: 30%;height: 30%;"><br>
                 <span>Inicio</span>
             </div>
         </a>
         <a href="/alerts/{{$patient->patients_id}}" class="col-xs-4" style="text-align: center;">
             <div style="color: white">
-                <img src="/icon/alertas-01.png" style="width: 25%;height: 25%;"><br>
+                <img src="/icon/alertas-01.png" style="width: 30%;height: 30%;"><br>
                 <span>Alertas</span>
             </div>
         </a>
         <a href="/dictionary" class="col-xs-4" style="text-align: center;">
             <div style="color: white">
-                <img src="/icon/diccionario-01.png" style="width: 25%;height: 25%;"><br>
+                <img src="/icon/diccionario-01.png" style="width: 30%;height: 30%;"><br>
                 <span>Diccionario</span>
             </div>
         </a>

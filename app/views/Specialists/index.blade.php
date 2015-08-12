@@ -6,7 +6,7 @@
         @include('navs.top')
         <div class="row" style="margin-top: 11%;padding-bottom: 10px;">
             <div style="background-color: #69112a;border-color: #69112a;min-height: 60px">
-                <h3 style="color: white;  position: relative;  top: 50%;  transform: translateY(50%);margin-left:50px; ">Especialistas</h3>
+                <h3 style="color: white;  position: relative;  top: 50%;  transform: translateY(50%);margin-left:30px;font-size: 20px;">Especialistas</h3>
             </div>
             <?php $data = array(
                     array(
@@ -26,10 +26,10 @@
             <table style="background-color: #f18c24;width: 100%;margin-top: -15px;">
                 @foreach($data as $especialist)
                 <tr style="height: 64px;">
-                    <td rowspan="2"><img src="/icon/{{$especialist['img']}}" style="margin-left:30px;height: 60px;width: 60px;"></td><td style="color: white;text-align: left" >{{$especialist['name']}}</td><td rowspan="2"><a href="mailto:someone@example.com"><img src="/icon/icono_mail-01.png" style="height: 30%"></a> </td>
+                    <td rowspan="2"><img src="/icon/{{$especialist['img']}}" style="margin-left:30px;height: 60px;width: 60px;"></td><td style="color: white;text-align: left" >{{$especialist['name']}}<br><strong style="color: #691029;">{{$especialist['activity']}}</strong></brt></td><td rowspan="2"><a href="mailto:someone@example.com"><img src="/icon/icono_mail-01.png" style="height: 25%"></a> </td>
                 </tr>
                 <tr>
-                    <td style="color: #691029;margin-top: -10px;"><strong>{{$especialist['activity']}}</strong></td>
+                    <td></td>
                 </tr>
                 @endforeach
                 <tr style="height: 70px;">
