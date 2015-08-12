@@ -5,13 +5,13 @@ $patient = PatientUser::where('users_id',$user->id)->get()->first();
     <div class="container" style="padding-top: 15px;">
         <a href="/specialists/{{$patient->patients_id}}" class="col-xs-6" style="text-align: center;">
             <div style="color: white">
-                <i class="fa fa-plus-square fa-3x"></i><br>
+                <img src="/icon/especialistas-01.png" style="width: 15%;height: 15%;"><br>
                 <span>Especialistas</span>
             </div>
         </a>
         <a href="/file/{{$patient->patients_id}}" class="col-xs-6" style="text-align: center;">
             <div style="color: white">
-                <i class="fa fa-file-text-o fa-3x"></i><br>
+                <img src="/icon/ficha-01.png" style="width: 15%;height: 15%;"><br>
                 <span>Ficha</span>
             </div>
         </a>

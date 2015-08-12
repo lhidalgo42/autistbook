@@ -14,6 +14,11 @@
     {{HTML::style('packages/bootstrap/dist/css/bootstrap.min.css') }}
     {{HTML::style("packages/font-awesome/css/font-awesome.min.css") }}
     <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <style>
+        #buttons > a{
+            width: 300px;
+        }
+    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,12 +48,12 @@
 </div>
 <div class="container fadein-2" id="options" style="display: none;   ">
     <div class="row">
-            <div class="col-lg-6 col-lg-offset-3" style="text-align: center;padding-bottom: 50px;">
+            <div class="col-lg-6 col-lg-offset-3" id="buttons" style="text-align: center;padding-bottom: 50px;">
                 <img  src="/img/logo.png" style="width: 60%;height: 60%;margin-top: 40%"/>
                 <br>
-                <button class="btn btn-lg btn-iniciar-sesion" id="iniciar-sesion">INICIAR SESIÓN</button>
+                <a href="#" class="btn btn-lg btn-iniciar-sesion" id="iniciar-sesion">INICIAR SESIÓN</a>
                 <br><br>
-                <button class="btn btn-lg btn-registrarse" id="registrarse">REGISTRARSE</button>
+                <a href="#" class="btn btn-lg btn-registrarse" id="registrarse">REGISTRARSE</a>
             </div>
     </div>
 </div>

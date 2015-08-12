@@ -33,8 +33,7 @@ Route::group(array('before' => 'auth'), function() {
     Route::get('/charts/{id}/day',['as' => 'charts','uses' => 'ChartsController@day']);
     Route::get('/charts/{id}/week',['as' => '','uses' => 'ChartsController@week']);
     Route::get('/charts/{id}/month',['as' => 'alerts','uses' => 'ChartsController@month']);
-
-
+    Route::get('/specialists/{id}','SpecialistsController@show');
 });
 
 Route::any('/{code}/{id}/{value}','DataController@create');
