@@ -35,6 +35,7 @@ Route::group(array('before' => 'auth'), function() {
     Route::get('/charts/{id}/month',['as' => 'alerts','uses' => 'ChartsController@month']);
     Route::get('/specialists/{id}','SpecialistsController@show');
     Route::get('/file/{id}','FileController@show');
+    route::get('/dictionary','');
 
 });
 
