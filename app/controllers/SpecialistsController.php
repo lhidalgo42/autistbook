@@ -10,7 +10,7 @@ class SpecialistsController extends \BaseController {
 	 */
 	public function index()
 	{
-        return View::make('specialists.html');
+        return View::make('specialists/html');
 	}
 
 	/**
