@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1fc413e-17d3-4eeb-8014-501cd6f7043b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/charts/day.blade.php" afterPath="$PROJECT_DIR$/app/views/charts/day.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/charts/month.blade.php" afterPath="$PROJECT_DIR$/app/views/charts/month.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/charts/week.blade.php" afterPath="$PROJECT_DIR$/app/views/charts/week.blade.php" />
-    </list>
+    <list default="true" id="d1fc413e-17d3-4eeb-8014-501cd6f7043b" name="Default" comment="" />
     <ignored path="autistbook.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -92,16 +88,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/specialists/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.576923">
-              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.21288015">
+              <caret line="7" column="79" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
               <folding>
                 <element signature="e#246#291#0#HTML" expanded="true" />
-                <element signature="e#310#396#0#HTML" expanded="true" />
-                <element signature="e#1449#1470#0#HTML" expanded="true" />
-                <element signature="e#1692#1716#0#HTML" expanded="true" />
+                <element signature="e#440#555#0#HTML" expanded="true" />
+                <element signature="e#1471#1492#0#HTML" expanded="true" />
+                <element signature="e#1714#1738#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,10 +161,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="week.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="week.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/charts/week.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39534885">
+            <state vertical-scroll-proportion="-8.5">
               <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding>
                 <element signature="e#367#388#0#HTML" expanded="true" />
@@ -238,11 +234,11 @@
         <option value="$PROJECT_DIR$/app/views/dictionaries/create.blade.php" />
         <option value="$PROJECT_DIR$/app/views/file/index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/alerts/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/specialists/index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/dictionaries/index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/charts/day.blade.php" />
         <option value="$PROJECT_DIR$/app/views/charts/month.blade.php" />
         <option value="$PROJECT_DIR$/app/views/charts/week.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/specialists/index.blade.php" />
       </list>
     </option>
   </component>
@@ -1020,19 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/specialists/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.576923">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-          <folding>
-            <element signature="e#246#291#0#HTML" expanded="true" />
-            <element signature="e#310#396#0#HTML" expanded="true" />
-            <element signature="e#1449#1470#0#HTML" expanded="true" />
-            <element signature="e#1692#1716#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dictionaries/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.0">
@@ -1075,10 +1058,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/charts/week.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39534885">
+        <state vertical-scroll-proportion="-8.5">
           <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding>
             <element signature="e#367#388#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/specialists/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21288015">
+          <caret line="7" column="79" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
+          <folding>
+            <element signature="e#246#291#0#HTML" expanded="true" />
+            <element signature="e#440#555#0#HTML" expanded="true" />
+            <element signature="e#1471#1492#0#HTML" expanded="true" />
+            <element signature="e#1714#1738#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
