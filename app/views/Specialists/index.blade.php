@@ -5,8 +5,8 @@
     <div class="container">
         @include('navs.top')
         <div class="row" style="margin-top: 11%;padding-bottom: 10px;">
-            <div style="!important;background-color: rgb(207,46,77);!important;border-color: rgb(207,46,77);min-height: 60px">
-                <h3 style="color: white;  position: relative;  top: 50%;  transform: translateY(50%);margin-left:30px;font-size: 20px;">Especialistas</h3>
+            <div style="background-color: #CF2E4D ;border-color: #CF2E4DZ;min-height: 60px">
+                <h3 style="color: white;  position: relative;  top: 50%;  transform: translateY(50%);margin-left:25px;font-size: 20px;">Especialistas</h3>
             </div>
             <?php $data = array(
                     array(
