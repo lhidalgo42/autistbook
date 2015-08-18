@@ -35,6 +35,7 @@
     </div>
 @stop
 @section('css')
+    <style>
     input[type=text] {
         background: transparent;
         border: none;
@@ -58,4 +59,5 @@
     :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color:    #d3d3d3;
     }
+    </style>
 @stop

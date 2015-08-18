@@ -36,6 +36,7 @@ Route::group(array('before' => 'auth'), function() {
     Route::get('/specialists/{id}','SpecialistsController@show');
     Route::get('/file/{id}','FileController@show');
     route::get('/dictionary','DictionariesController@index');
+    route::get('/dictionary/add','DictionariesController@create');
     route::get('/dictionary/{id}','DictionariesController@show');
 });
 Route::post('/dictionary/query','DictionariesController@search');

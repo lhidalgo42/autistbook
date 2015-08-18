@@ -11,6 +11,9 @@
 
                 </tbody>
                 <tfoot>
+                <tr style="background-color: rgb(240,140,35);height: 65px;">
+                    <td style="color: white;text-align: center;"><a style="color: white;" href="dictionary/add">a&ntilde;adir nueva conducta</a></td>
+                </tr>
                 <tr style="height: 70px;"></tr>
                 </tfoot>
             </table>
@@ -24,7 +27,7 @@
                 type: "POST",
                 success: function( data ) {
                     for(var i = 0; i < data.length;i++){
-                        table.append('<tr style="height: 70px;">' +
+                        table.append('<tr style="height: 65px;">' +
                                 '  <td style="padding-left: 30px;border-bottom: 2px solid #ffffff;"><h3><a href="/dictionary/'+data[i].id+'" style="color: white;">'+data[i].name+'</a></h3></td>' +
                                 '</tr>');
 
@@ -53,7 +56,8 @@
     </div>
 @stop
 @section('css')
-    input[type=text] {
+    <style>
+        input[type=text] {
         background: transparent;
         border: none;
         border-bottom: 2px solid #000000;
@@ -76,4 +80,5 @@
     :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color:    #d3d3d3;
     }
+    </style>
 @stop

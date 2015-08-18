@@ -22,7 +22,7 @@ class DictionariesController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		return View::make('dictionaries.create');
 	}
 
 	/**
