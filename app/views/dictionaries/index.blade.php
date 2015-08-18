@@ -28,7 +28,7 @@
                 success: function( data ) {
                     for(var i = 0; i < data.length;i++){
                         table.append('<tr style="height: 65px;">' +
-                                '  <td style="padding-left: 30px;border-bottom: 2px solid #ffffff;"><h3><a href="/dictionary/'+data[i].id+'" style="color: white;">'+data[i].name+'</a></h3></td>' +
+                                '  <td style="padding-left: 30px;border-bottom: 2px solid #ffffff;"><h3 style="font-size: 16px;"><a href="/dictionary/'+data[i].id+'" style="color: white;">'+data[i].name+'</a></h3></td>' +
                                 '</tr>');
 
                     }
@@ -43,8 +43,8 @@
                     type: "POST",
                     success: function( data ) {
                         for(var i = 0; i < data.length;i++){
-                            table.append('<tr style="height: 70px;">' +
-                                         '  <td style="padding-left: 30px;border-bottom: 2px solid #ffffff;"><h3><a href="#" style="color: white;">'+data[i].name+'</a></h3></td>' +
+                            table.append('<tr style="height: 65px;">' +
+                                         '  <td style="padding-left: 30px;border-bottom: 2px solid #ffffff;"><h3 style="font-size: 16px;"><a href="#" style="color: white;">'+data[i].name+'</a></h3></td>' +
                                          '</tr>');
 
                         }
