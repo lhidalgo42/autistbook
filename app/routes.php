@@ -33,7 +33,7 @@ Route::group(array('before' => 'auth'), function() {
     Route::get('/charts/{id}/day',['as' => 'charts','uses' => 'ChartsController@day']);
     Route::get('/charts/{id}/week',['as' => '','uses' => 'ChartsController@week']);
     Route::get('/charts/{id}/month',['as' => 'alerts','uses' => 'ChartsController@month']);
-    Route::get('/specialists/{id}','SpecialistsController@show');
+    Route::get('/specialists/','SpecialistsController@index');
     Route::get('/file/{id}','FileController@show');
     route::get('/dictionary','DictionariesController@index');
     route::get('/dictionary/add','DictionariesController@create');

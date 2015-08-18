@@ -10,7 +10,7 @@ class SpecialistsController extends \BaseController {
 	 */
 	public function index()
 	{
-
+        return View::make('specialists.index');
 	}
 
 	/**
@@ -44,7 +44,7 @@ class SpecialistsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		return View::make('specialists.index');
+
 	}
 
 	/**
