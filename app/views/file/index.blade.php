@@ -6,7 +6,7 @@
         @include('navs.top')
         <div class="row" style="margin-top: 11%;padding-bottom: 10px;">
             <div style="background-color: rgb(207,46,77); border-color: rgb(207,46,77);min-height: 60px">
-                <h3 style="color: white;  position: relative;  top: 50%;  transform: translateY(50%);margin-left:50px; ">Ficha</h3>
+                <h3 style="color: white;  position: relative;  top: 50%;  transform: translateY(50%);margin-left:5px; ">Ficha</h3>
             </div>
             <table style="background-color: #f18c24;width: 100%;margin-top: -15px;">
                 <tr style="height: 70px;">
