@@ -33,7 +33,7 @@
                 </tr>
                 @endforeach
                 <tr style="height: 70px;">
-                    <td style="width: 27%"><img src="/icon/agregarnuevo-01.png" style="margin-left:30px;height: 60px;width: 60px;"><td style="color: white;text-align: left" >Agregar Nuevo</td>
+                    <td style="width: 28%"><img src="/icon/agregarnuevo-01.png" style="margin-left:30px;height: 60px;width: 60px;"><td style="color: white;text-align: left" >Agregar Nuevo</td>
                 </tr>
                     <tr style="height: 70px;">
 

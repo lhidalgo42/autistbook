@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1fc413e-17d3-4eeb-8014-501cd6f7043b" name="Default" comment="" />
+    <list default="true" id="d1fc413e-17d3-4eeb-8014-501cd6f7043b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/specialists/index.blade.php" afterPath="$PROJECT_DIR$/app/views/specialists/index.blade.php" />
+    </list>
     <ignored path="autistbook.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -47,15 +49,19 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/specialists/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.21645796">
-              <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+            <state vertical-scroll-proportion="0.69588554">
+              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
               <folding>
                 <element signature="e#246#291#0#HTML" expanded="true" />
+                <element signature="e#310#384#0#HTML" expanded="true" />
                 <element signature="e#406#521#0#HTML" expanded="true" />
                 <element signature="e#1303#1367#0#HTML" expanded="true" />
                 <element signature="e#1437#1458#0#HTML" expanded="true" />
                 <element signature="e#1680#1704#0#HTML" expanded="true" />
+                <element signature="e#2088#2106#0#HTML" expanded="true" />
+                <element signature="e#2144#2194#0#HTML" expanded="true" />
                 <element signature="e#2199#2236#0#HTML" expanded="true" />
+                <element signature="e#2303#2324#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -933,15 +939,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/specialists/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.21645796">
-          <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+        <state vertical-scroll-proportion="0.69588554">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
           <folding>
             <element signature="e#246#291#0#HTML" expanded="true" />
+            <element signature="e#310#384#0#HTML" expanded="true" />
             <element signature="e#406#521#0#HTML" expanded="true" />
             <element signature="e#1303#1367#0#HTML" expanded="true" />
             <element signature="e#1437#1458#0#HTML" expanded="true" />
             <element signature="e#1680#1704#0#HTML" expanded="true" />
+            <element signature="e#2088#2106#0#HTML" expanded="true" />
+            <element signature="e#2144#2194#0#HTML" expanded="true" />
             <element signature="e#2199#2236#0#HTML" expanded="true" />
+            <element signature="e#2303#2324#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
