@@ -26,7 +26,7 @@
             <table style="background-color: #f18c24;width: 100%;margin-top: -15px;">
                 @foreach($data as $especialist)
                 <tr style="height: 62px;">
-                    <td rowspan="2"><img src="/icon/{{$especialist['img']}}" style="margin-left:30px;height: 60px;width: 60px;font-size: 16px;"></td><td style="color: white;text-align: left" >{{$especialist['name']}}<br style="  margin: 4px 0;"><strong style="color: #691029;">{{$especialist['activity']}}</strong></brt></td><td rowspan="2"><a href="mailto:someone@example.com"><img src="/icon/icono_mail-01.png" style="height: 25%"></a> </td>
+                    <td rowspan="2"><img src="/icon/{{$especialist['img']}}" style="margin-left:30px;height: 60px;width: 60px;font-size: 16px;"></td><td style="color: white;text-align: left" >{{$especialist['name']}}<br style="  margin: 4px 0;"><strong style="color: #691029;">{{$especialist['activity']}}</strong></td><td rowspan="2"><a href="mailto:someone@example.com"><img src="/icon/icono_mail-01.png" style="height: 25%"></a> </td>
                 </tr>
                 <tr>
                     <td></td>
