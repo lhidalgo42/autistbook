@@ -6,25 +6,9 @@
         @include('navs.top2')
         @include('navs.charts')
         <div class="row" style="padding-top: 100px;padding-bottom: 100px;">
-            <div id="week"></div>
+            <img src="/img/week.png" style="width: 330px;">
         </div>
-        <script>
-            $(function() {
-                Morris.Area({
-                    element: 'week',
-                    data: {{ json_encode($data) }},
-                    xkey: 'period',
-                    ykeys: ['{{$patient->name}}'],
-                    labels: ['{{$patient->name}}'],
-                    pointSize: 2,
-                    hideHover: 'auto',
-                    resize: true,
-                    lineColors: ['#87d6c6'],
-                    lineWidth:2,
-                    pointSize:1,
-                });
-            });
-        </script>
+
         @include('navs.bottom')
     </div>
 @stop
